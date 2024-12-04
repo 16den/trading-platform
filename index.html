@@ -6,10 +6,30 @@
     <title>DenMusic</title>
 </head>
 <body>
+     <!-- Заголовок -->
     <header>
+         <!-- Логотип -->
+         <img src="images/logo.png" alt="логопип">
+         <!--/ Логотип -->
+         <!-- Навигация -->
+         <nav>
+            <ul>
+                <li><a href="#">Мастер-классы и курсы</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <!--/ Навигация -->
         <h1>ШКОЛА ФОРТЕПИАНО</h1>
      <p>Научу вас правильно тыкать по клавишам</p>
+     <button type="button">
+        <img src="images/login.jpg" alt="Войти" width="100" height="100">
+        <span>Войти</span>
+        </button>
     </header>
+     <!--/ Заголовок -->
+    <!-- Основной контент -->
     <main>Основной контент
         <article>
             <section> 
@@ -22,6 +42,64 @@
             <li>Отзывы</li>
         </u>
     </main>
-    <footer>Подвал</footer>
+    <!--/ Основной контент -->
+    <!-- Подвал -->
+    <footer>
+        <a>Корпорация монстров</a>
+        <p>&copy; DenMusic 2024</p>
+    </footer>
+    <!--/ Подвал -->
+    <!-- Формы -->
+    <div>
+        <!-- Форма "Войдите в профиль" -->
+        <section>
+            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Авторизация</h2>
+            <div>
+                <button type="button">Вход</button>
+                <button type="button">Создать аккаунт</button>
+                <button type="button">Забыл пароль</button>
+            </div>
+        </section>
+        <!--/ Форма "Войдите в профиль" -->
+        <!-- Форма "Регистрация" -->
+        <section>
+            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Регистрация</h2>
+            <form action="/" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Логин" required>
+                <fieldset>
+                    <div>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input type="password" name="repeat-password" placeholder="Введите пароль заново" required>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Зарегистрироваться">
+                    <button type="button">Отмена</button>
+                </fieldset>
+                <button type="button">У меня уже есть аккаунт</button>
+            </form>
+        </section>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        <section>
+            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Войти</h2>
+            <form action="/" method="post">
+                <input type="email" name="email" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <fieldset>
+                    <input type="submit" value="Войти">
+                    <button type="button">Отмена</button>
+                </fieldset>
+                <button type="button">У меня еще нет аккаунта</button>
+            </form>
+        </section>
+        <!--/ Форма "Войти" -->
+    </div>
+    <!--/ Формы -->
 </body>
 </html>
